@@ -6,9 +6,16 @@ group = 'net.nexarys.alilib.version'
 version = '1.0.0'
 
 repositories {
-    mavenLocal();
+    mavenLocal()
+    mavenCentral()
     maven {
         name = "spigotmc-repo"
+        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+    }
+    maven { url = "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url = "https://oss.sonatype.org/content/groups/public/" }
+    maven {
+        name = "codemc-nms"
         url = "https://repo.codemc.org/repository/nms/"
     }
     maven { url = "https://libraries.minecraft.net/" }
