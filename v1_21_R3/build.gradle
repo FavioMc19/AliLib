@@ -12,7 +12,7 @@ repositories {
 
     maven {
         name = "spigotmc-repo"
-        url = "https://hub.spigotmc.org/nexus/repository/public/"
+        url = "https://repo.codemc.org/repository/nms/"
     }
 }
 

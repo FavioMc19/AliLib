@@ -10,11 +10,6 @@ repositories {
         name = "spigotmc-repo"
         url = "https://repo.codemc.org/repository/nms/"
     }
-
-    maven {
-        name = "minecraft-repo"
-        url = "https://repo.minebench.de/"
-    }
 }
 
 dependencies {

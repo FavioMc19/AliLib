@@ -17,11 +17,6 @@ repositories {
         url = "https://repo.codemc.org/repository/nms/"
     }
 
-    maven { url 'https://maven.evokegames.gg/snapshots' }
-    maven {
-        name = "minecraft-repo"
-        url = "https://repo.minebench.de/"
-    }
 }
 
 dependencies {
