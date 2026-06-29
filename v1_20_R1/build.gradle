@@ -6,6 +6,7 @@ group = 'net.nexarys.alilib.version'
 version = '1.0.0'
 
 repositories {
+    mavenCentral()
     maven {
         name = "spigotmc-repo"
         url = "https://repo.codemc.org/repository/nms/"
