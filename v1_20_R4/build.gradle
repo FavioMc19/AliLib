@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.kokoricraft.holotools.version'
+version = '1.0.0'
+
+repositories {
+    maven {
+        name = "spigotmc-repo"
+        url = "https://repo.codemc.org/repository/nms/"
+    }
+
+    maven {
+        name = "minecraft-repo"
+        url = "https://repo.minebench.de/"
+    }
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot:1.20.6-R0.1-SNAPSHOT"
+    implementation(project(":Api"))
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+}
+
