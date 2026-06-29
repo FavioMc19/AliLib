@@ -11,12 +11,10 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
-
     maven {
         name = "spigotmc-repo"
         url = "https://repo.codemc.org/repository/nms/"
     }
-
     maven { url = "https://libraries.minecraft.net/" }
 }
 
@@ -25,11 +23,6 @@ dependencies {
 }
 
 java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
-    }
-}
-
-tasks.withType(JavaCompile).configureEach {
-    options.release = 17
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
