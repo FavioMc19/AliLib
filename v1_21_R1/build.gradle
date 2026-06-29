@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'net.kokoricraft.holotools.version'
+group = 'net.nexarys.alilib.version'
 version = '1.0.0'
 
 repositories {
