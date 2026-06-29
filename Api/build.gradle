@@ -27,3 +27,13 @@ repositories {
 dependencies {
     compileOnly "org.spigotmc:spigot:1.19.4-R0.1-SNAPSHOT"
 }
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+}
